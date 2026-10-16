@@ -8,6 +8,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
+  .efecto-destello {
+        animation: destello-luz 2s infinite ease-in-out;
+    }
+
+    @keyframes destello-luz {
+        0% { text-shadow: 0 0 5px rgba(255, 235, 59, 0.4); }
+        50% { text-shadow: 0 0 15px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 193, 7, 0.8); }
+        100% { text-shadow: 0 0 5px rgba(255, 235, 59, 0.4); }
+    }
   --char:#4A4849; --ink:#2B2A2B; --mut:#6F6D6E; --gold:#DEC04E; --gold2:#C29C47; --goldtx:#8A6A1F;
   --g1:#186838; --g2:#489848; --g3:#78B848; --g4:#D8E8C8; --g5:#EEF4E6;
   --bg:#F5F7F0; --card:#FFFFFF; --line:#E3E6DA; --bad:#B4533C; --badbg:#F8E9E4; --warnbg:#FAF3DC; --okbg:#E6F1DD;
